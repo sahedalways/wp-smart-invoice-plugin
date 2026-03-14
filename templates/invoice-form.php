@@ -1,28 +1,44 @@
-<h2>Create Invoice</h2>
+<?php
+$json = file_get_contents(SI_PATH . 'assets/data/professions.json');
+$professions = json_decode($json, true);
+?>
 
-<form method="post">
-
-    <select id="business_type" name="business_type">
-        <option value="">Select Business Type</option>
-        <option value="doctor">Doctor</option>
-        <option value="consultant">Consultant</option>
-        <option value="freelancer">Freelancer</option>
-    </select>
-
-    <input type="text" name="client_name" placeholder="Client Name">
-
-    <!-- Doctor fields -->
-    <div id="doctor_fields" style="display:none">
-        Patient Name: <input name="patient_name">
-        Diagnosis: <input name="diagnosis">
+<div class="invoice-form-container">
+    <div class="invoice-form-header">
+        <h2 class="text-white">Create Invoice</h2>
     </div>
 
-    <!-- Freelancer fields -->
-    <div id="freelancer_fields" style="display:none">
-        Project Name: <input name="project_name">
-        Hours: <input name="hours">
-    </div>
+    <form method="post" class="invoice-form-body">
 
-    <button type="submit" name="save_invoice">Save</button>
+        <div class="invoice-field-group">
+            <label for="business_type">
+                Business Type
+                <span class="dashicons dashicons-star-filled required-star"></span>
+            </label>
+            <select id="business_type" name="business_type">
+                <option value="">Select Business Type</option>
+                <?php foreach ($professions as $p): ?>
+                    <option value="<?php echo esc_attr($p['id']); ?>">
+                        <?php echo esc_html($p['name']); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
 
-</form>
+
+        <!-- Dynamic fields container -->
+        <div id="dynamic_fields_container">
+
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button type="submit" name="save_invoice" class="btn-save-invoice">Save Invoice</button>
+        </div>
+
+    </form>
+</div>
+
+
+<script>
+    const professions = <?php echo json_encode($professions); ?>;
+</script>

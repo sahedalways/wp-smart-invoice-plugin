@@ -1,0 +1,112 @@
+[
+    {
+        "id": "doctor",
+        "name": "Doctor",
+        "fields": [
+            { "label": "Patient Name", "name": "patient_name", "type": "text" },
+            { "label": "Diagnosis", "name": "diagnosis", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Consultation Fee", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "consultant",
+        "name": "Consultant",
+        "fields": [
+            { "label": "Client Name", "name": "client_name", "type": "text" },
+            { "label": "Project Description", "name": "project_desc", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Consultation Fee", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "freelancer",
+        "name": "Freelancer",
+        "fields": [
+            { "label": "Project Name", "name": "project_name", "type": "text" },
+            { "label": "Hours Worked", "name": "hours", "type": "number" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Rate per Hour", "name": "rate", "type": "number" }
+        ]
+    },
+    {
+        "id": "agency",
+        "name": "Agency",
+        "fields": [
+            { "label": "Client Name", "name": "client_name", "type": "text" },
+            { "label": "Service Provided", "name": "service", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Project Cost", "name": "cost", "type": "number" }
+        ]
+    },
+    {
+        "id": "lawyer",
+        "name": "Lawyer",
+        "fields": [
+            { "label": "Client Name", "name": "client_name", "type": "text" },
+            { "label": "Case Title", "name": "case_title", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Legal Fees", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "accountant",
+        "name": "Accountant",
+        "fields": [
+            { "label": "Client Name", "name": "client_name", "type": "text" },
+            { "label": "Service Type", "name": "service_type", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Fee", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "teacher",
+        "name": "Teacher",
+        "fields": [
+            { "label": "Student Name", "name": "student_name", "type": "text" },
+            { "label": "Subject", "name": "subject", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Tuition Fee", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "developer",
+        "name": "Software Developer",
+        "fields": [
+            { "label": "Project Name", "name": "project_name", "type": "text" },
+            { "label": "Hours Worked", "name": "hours", "type": "number" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Rate per Hour", "name": "rate", "type": "number" }
+        ]
+    },
+    {
+        "id": "designer",
+        "name": "Designer",
+        "fields": [
+            { "label": "Project Name", "name": "project_name", "type": "text" },
+            { "label": "Design Type", "name": "design_type", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Fee", "name": "fee", "type": "number" }
+        ]
+    },
+    {
+        "id": "mechanic",
+        "name": "Mechanic",
+        "fields": [
+            { "label": "Client Name", "name": "client_name", "type": "text" },
+            { "label": "Vehicle Type", "name": "vehicle_type", "type": "text" },
+            { "label": "Discount (%)", "name": "discount", "type": "number" },
+            { "label": "Tax (%)", "name": "tax", "type": "number" },
+            { "label": "Repair Cost", "name": "cost", "type": "number" }
+        ]
+    }
+]
